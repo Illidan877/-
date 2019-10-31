@@ -1,5 +1,3 @@
-[TOC]
-
 ## 前提概要
 
 ### **base64**
@@ -47,15 +45,16 @@ h.digest()
 
 
 #### RSA256 非对称加密
-
-​	...
+```
+..
+```
 
 ## JWT 组成
 
 1.  ```python
    #header
    {'alg':'HS256','typ':'JWT'}
-    ```
+   ```
 
 2. ```python
    #payload
