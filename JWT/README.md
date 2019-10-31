@@ -51,27 +51,29 @@ h.digest()
 
 ## JWT 组成
 
-1.  ```python
-   #header
-   {'alg':'HS256','typ':'JWT'}
-   ```
+- header
 
-2. ```python
-   #payload
-   {
-       'exp': xxx, # Expiration Time 此token的过期时间的时间戳
-       'iss': xxx，# (Issuer) Claim 指明此token的签发者
-       'aud': xxx, #(Audience) Claim 指明此token的
-       'iat': xxx, # (Issued At) Claim 指明此创建时间的时间戳
-       'aud': xxx, # (Audience) Claim 指明此token签发面向群体
-       ...
-       'uid': 1
-   }
-   ```
+```python
+{'alg':'HS256','typ':'JWT'}
+```
 
-3. signature 签名 **HS256(自定义的key , base64后的header + '.' +base64后的payload)**
+- payload
 
-4. jwt结果    **base64(header) + '.' + base64(payload) + '.' + base64(sign)**
+```python
+{
+    'exp': xxx, # Expiration Time 此token的过期时间的时间戳
+    'iss': xxx，# (Issuer) Claim 指明此token的签发者
+    'aud': xxx, #(Audience) Claim 指明此token的
+    'iat': xxx, # (Issued At) Claim 指明此创建时间的时间戳
+    'aud': xxx, # (Audience) Claim 指明此token签发面向群体
+    ...
+    'uid': 1
+}
+```
+
+- signature 签名 **HS256(自定义的key , base64后的header + '.' +base64后的payload)**
+
+- jwt结果    **base64(header) + '.' + base64(payload) + '.' + base64(sign)**
 
 
 
