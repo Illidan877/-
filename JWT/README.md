@@ -1,12 +1,10 @@
 ### 版本
 
-- jwt  0.6.1
+- python-3.6.8
 
-- python 3.6.8
+- pyjwt-1.7.1
 
-- ```
-  json   base64   time   copyhmac python3自带库
-  ```
+- json   base64   time   copyhmac python3自带库
 
 ## 前提概要
 
