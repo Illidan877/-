@@ -6,7 +6,7 @@
 
 - json   base64   time   copyhmac python3自带库
 
-## 前提概要
+## base64(二进制可视化)HASH(加密)
 
 ### **base64**
 
@@ -60,7 +60,7 @@ s.digest()
 
 
 
-### hmac**
+### hmac(加盐)
 
 功能**: 使用**散列**算法同时结合一个加密**密钥**
 
@@ -77,7 +77,7 @@ h.digest()
 
 ## JWT 组成
 
-- header
+- header(多台服务器发送token时 解析alg得到指定加密方式)
 
 ```python
 {'alg':'HS256','typ':'JWT'}
@@ -97,7 +97,7 @@ h.digest()
 }
 ```
 
-- signature 签名 **HS256(自定义的key , base64后的header + '.' +base64后的payload)**
+- signature 签名 **HS256(key , base64_header + '.' +base64_payload)**
 
 - jwt结果    **base64(header) + '.' + base64(payload) + '.' + base64(sign)**
 
