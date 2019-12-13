@@ -29,7 +29,7 @@
 
 3.   as_view ［入口］
 
-   - 装饰器封装了属性view_class和view_initkwargs 和功能view()  
+   - 装了属性view_class和view_initkwargs 和功能view()  
    - 把request以及参数封装传递给了Class.dispatch，然后调用Class.dispatch
 
    - 请求的request数据获取
@@ -50,23 +50,17 @@
            return handler(request, *args, **kwargs)
    ```
 
-5. http_method_not_allowed　　［前端大黄页］
+5. http_method_not_allowed
+
+   - 前端大黄页
 
 6. _allowed_methods
 
    - 用列表迭代器，返回请求方法的名字
 
-7. options　［请求方法］
+7. options
+
+   - 请求方法
 
 
-
-
-
-
-
-
-
-```
-
-```
 
