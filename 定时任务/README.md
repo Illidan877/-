@@ -13,7 +13,7 @@ INSTALLED_APPS = (
 )
 ```
 
-3.  创建应用下的 cron.py	(任务)
+3.  创建应用下的 cron.py	添加任务 
 4. 在django项目的**settings.py**中添加以下命令
 
 ```python
